@@ -1,0 +1,327 @@
+body {
+  overflow-x: hidden; }
+
+@media screen and (max-width: 877px) {
+  .Index-Oculto {
+    display: none; } }
+
+@media screen and (max-width: 717px) and (orientation: landscape) {
+  .Servicio-Oculto {
+    display: none; } }
+
+@media screen and (max-width: 990px) {
+  .Nosotras-Oculto {
+    display: none; } }
+
+@media screen and (min-width: 989px) {
+  .Item-Mini {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .Mapa {
+    margin-left: 8%; } }
+
+body {
+  background-color: #faf7f2; }
+
+a {
+  text-decoration: none;
+  color: #7c9e4f; }
+
+a:hover {
+  color: #e6914f; }
+
+.Bordes:hover {
+  border: 5px solid #7c9e4f; }
+
+.Bordes {
+  border: solid 5px #e6914f;
+  margin: 2px; }
+
+.Footer {
+  background-color: #7c9e4f;
+  margin-top: 5%;
+  justify-content: center;
+  text-align: center;
+  padding: 0%; }
+  .Footer .Footer__Row {
+    margin: 0%;
+    padding: 0%; }
+  .Footer .Footer__Img {
+    margin-top: 2%; }
+  .Footer .Footer__Texto {
+    margin-top: 1%;
+    color: #faf7f2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center; }
+
+/*NAVBAR*/
+.EstiloNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #faf7f2;
+  font-family: 'Roboto', sans-serif; }
+
+.EstiloNav__Ul {
+  display: flex;
+  justify-content: flex-end; }
+
+.EstiloNav__Ul--Green {
+  color: #7c9e4f; }
+
+li {
+  padding: 10px;
+  display: inline;
+  margin: 0px 10px; }
+
+/*CLASES INDEX*/
+.Index {
+  background-image: url(../img/img0.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center; }
+  .Index .Index__Box {
+    border: solid 10px #faf7f2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Index .Index__Box .Index__Box--Titulo {
+      margin: 5%;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      font-size: 80px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #faf7f2; }
+
+.SubtituloIndex {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6914f;
+  margin-top: 3%; }
+
+.TextoIndex {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #3B403B;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%; }
+
+.ImgLinkIndex {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+  .ImgLinkIndex .ImgLinkIndex__Box {
+    display: flex;
+    justify-content: center; }
+    .ImgLinkIndex .ImgLinkIndex__Box .ImgLinkIndex__Box--Item {
+      margin: 15px; }
+
+/*CLASES GALERIA*/
+.Galeria {
+  background-color: #7c9e4f; }
+  .Galeria .Galeria__Titulo {
+    margin: 10px;
+    background-color: #7c9e4f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #faf7f2;
+    justify-content: center; }
+
+.Galeria__Subtitulo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6914f;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center; }
+
+.Galeria__Carousel {
+  margin-top: 3%;
+  margin-bottom: 5%; }
+
+/*NOSOTAS*/
+.Nosotras {
+  background-color: #7c9e4f; }
+  .Nosotras .Nosotras__Titulo {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #faf7f2; }
+
+.ContenedorNos {
+  display: flex; }
+
+.Nosotras__Subtitulo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6914f;
+  margin-top: 7%;
+  font-size: 40px; }
+
+.ImgNos {
+  width: 45%;
+  padding: 0%;
+  margin-top: 4%;
+  margin-bottom: 3%; }
+
+.TextoNos {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #3B403B;
+  padding: 0%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%; }
+
+.Item-Mini {
+  width: 90%;
+  padding: 0%; }
+
+/*SERVICIO*/
+.Servicio {
+  background-color: #7c9e4f; }
+  .Servicio .Servicio__Titulo {
+    margin: 10px;
+    background-color: #7c9e4f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #faf7f2;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 0%;
+    padding: 0%; }
+
+.Servicio__Subtitulo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6914f;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 0%;
+  justify-content: center; }
+
+.Servicio__Texto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #3B403B;
+  margin-top: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex; }
+
+/*PEDI MUCHA*/
+.PediMuchaBox {
+  justify-content: center; }
+
+.PediMucha {
+  background-color: #7c9e4f; }
+  .PediMucha .PediMucha__Titulo {
+    margin: 10px;
+    background-color: #7c9e4f;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #faf7f2;
+    justify-content: center; }
+
+.PediMucha__Subtitulo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6914f;
+  margin-top: 2%;
+  margin-bottom: 4%; }
+
+.Formulario {
+  margin-bottom: 10%;
+  padding: 0%; }
+
+.EstiloMapa {
+  width: 90%;
+  margin-top: 10%;
+  margin-bottom: 10%; }
+
+/* Mucha-Deli */
+.card-estilos {
+  margin: 3%;
+  background-color: #c5cd90; }
+
+.menuCarrito {
+  margin: 3%;
+  width: 80%;
+  background-color: white;
+  align-items: center; }
+
+
+
+  .div-title{
+    background-color: #7c9e4f;
+    margin-bottom: 3%;
+    color: #faf7f2;
+  }
+
+  .title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .card-body{
+    background-color:#faf7f2;
+    margin: 5%;
+  }
+
+  .btn-card{
+    background-color: #e6914f;
+    color:#faf7f2;
+  }
+
+  .btn-finalizarCompra{
+    background-color: #7c9e4f;
+    color: #faf7f2;
+  }

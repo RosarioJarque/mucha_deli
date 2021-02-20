@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "nombre": "Docena de Sandwichs",
+        "precio": 1800,
+        "imagen": "img/data4.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Docena de Bagel",
+        "precio": 1560,
+        "imagen": "img/data2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Muffin Salado",
+        "precio": 1200,
+        "imagen": "img/data3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Wrap",
+        "precio": 2040,
+        "imagen": "img/data4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Barra Hummus x6",
+        "precio": 800,
+        "imagen": "img/data6.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Picada para 10",
+        "precio": 2500,
+        "imagen": "img/data5.JPG"
+    }
+
+]
