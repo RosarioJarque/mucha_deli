@@ -45,7 +45,7 @@ window.onload = function () {
                 
                 // Boton 
                 let boton = document.createElement('button');
-                boton.classList.add('btn', 'btn-sm', 'btn-card');
+                boton.classList.add('btn', 'btn-sm', 'btn-secondary');
                 boton.textContent = 'Agregar';
                 boton.setAttribute('marcador', info['id']);
                 boton.addEventListener('click', agregarCarrito);
@@ -95,11 +95,11 @@ window.onload = function () {
             // Creamos el nodo del item del carrito
             let div = document.createElement('li');
             div.classList.add('list-group-item', 'text-right', 'mx-2');
-            div.textContent = `${numeroUnidadesItem} x ${miItem[0]['nombre']} - ${miItem[0]['precio']}$`;
+            div.textContent = `${numeroUnidadesItem} x ${miItem[0]['nombre']} - $${miItem[0]['precio']}`;
             
             // Boton de borrar
             let miBoton = document.createElement('button');
-            miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+            miBoton.classList.add('btn', 'btn-dark', 'mx-5', 'btn-quitar');
             miBoton.textContent = 'X';
             miBoton.style.marginLeft = '1rem';
             miBoton.setAttribute('item', item);
