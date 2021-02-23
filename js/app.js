@@ -45,7 +45,7 @@ window.onload = function () {
                 
                 // Boton 
                 let boton = document.createElement('button');
-                boton.classList.add('btn', 'btn-sm', 'btn-secondary');
+                boton.classList.add('btn', 'btn-sm', 'btn-secondary', 'btn-anima');
                 boton.textContent = 'Agregar';
                 boton.setAttribute('marcador', info['id']);
                 boton.addEventListener('click', agregarCarrito);
