@@ -68,7 +68,10 @@ window.onload = function () {
     function agregarCarrito () {
         // Agregamos el Nodo a nuestro carrito
         carrito.push(this.getAttribute('marcador'))
-            
+        
+        //Animacion
+        $('#anima-cart').show();    
+
         // Calculo el total
         calcularTotal();
         // Renderizamos el carrito 
