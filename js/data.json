@@ -1,25 +1,25 @@
 [
     {
         "id": 1,
-        "nombre": "Docena de Sandwichs",
+        "nombre": "Sandwichs x12",
         "precio": 1800,
         "imagen": "img/data4.jpg"
     },
     {
         "id": 2,
-        "nombre": "Docena de Bagel",
+        "nombre": "Bagel x12",
         "precio": 1560,
         "imagen": "img/data2.jpg"
     },
     {
         "id": 3,
-        "nombre": "Muffin Salado",
+        "nombre": "Muffin x12",
         "precio": 1200,
         "imagen": "img/data3.jpg"
     },
     {
         "id": 4,
-        "nombre": "Wrap",
+        "nombre": "Wrap x12",
         "precio": 2040,
         "imagen": "img/data1.jpg"
     },
