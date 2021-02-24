@@ -1,7 +1,17 @@
-
 // Variables
 let items = document.querySelector('#items');
-let carrito = [];
+
+let carrito = localStorage.getItem('carrito');
+if(!carrito){
+    carrito = [];
+} else {
+    carrito = JSON.carrito;
+}
+
+
+// let carrito = [];
+
+
 let total = 0;
 let $carrito = document.querySelector('#carrito');
 let $total = document.querySelector('#total');
@@ -76,7 +86,11 @@ window.onload = function () {
         calcularTotal();
         // Renderizamos el carrito 
         renderizarCarrito();
+
+        localStorage.setItem("carrito", JSON.carrito)
     }
+
+
 
     
     function renderizarCarrito() {
@@ -158,3 +172,7 @@ window.onload = function () {
     // Inicio
     renderItems();
 } 
+
+function finalizarCompra(){
+    alert('Gracias por confiar en Mucha, en seguida sera redirigido a la pagina de pago');
+}
