@@ -1,12 +1,7 @@
 // Variables
 let items = document.querySelector('#items');
 
-let carrito = localStorage.getItem('carrito');
-if(!carrito){
-    carrito = [];
-} else {
-    carrito = JSON.carrito;
-}
+let carrito = [];
 
 
 // let carrito = [];
@@ -76,9 +71,9 @@ window.onload = function () {
 
     // Funcion que se dispara con el click del boton. 
     function agregarCarrito () {
-        // Agregamos el Nodo a nuestro carrito
+        // Agregamos a nuestro carrito
         carrito.push(this.getAttribute('marcador'))
-        
+
         //Animacion
         $('#anima-cart').show();    
 
@@ -86,8 +81,8 @@ window.onload = function () {
         calcularTotal();
         // Renderizamos el carrito 
         renderizarCarrito();
-
-        localStorage.setItem("carrito", JSON.carrito)
+        
+        localStorage.setItem('carrito',JSON.stringify(carrito))
     }
 
 
@@ -125,6 +120,9 @@ window.onload = function () {
             div.appendChild(miBoton);
             $carrito.appendChild(div);
         });
+
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+    
     }
 
     function borrarItemCarrito() {
