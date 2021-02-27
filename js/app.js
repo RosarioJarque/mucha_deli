@@ -11,10 +11,10 @@ const miLocalStorage = window.localStorage;
 window.onload = function () {  
 
     // Inicio
-    cargarCarritoDeLocalStorage();
+    // cargarCarritoDeLocalStorage();
     renderItems();
-    calcularTotal();
-    renderizarCarrito();
+    // calcularTotal();
+    // renderizarCarrito();
 
 } 
                 
@@ -65,7 +65,10 @@ function renderItems() {
                 divCard.appendChild(boton);
                 div.appendChild(divCard);
                 items.appendChild(div);
-            }   
+            }  
+            cargarCarritoDeLocalStorage();
+            calcularTotal();
+            renderizarCarrito();
         }
     })           
 }
@@ -170,11 +173,13 @@ function cargarCarritoDeLocalStorage () {
     // Carga la información
         carrito = JSON.parse(miLocalStorage.getItem('carrito'));
         }
+
 }
             
 // Eventos
 $botonVaciar.addEventListener('click', vaciarCarrito);
 
-                // function finalizarCompra(){
-//     alert('Gracias por confiar en Mucha, en seguida sera redirigido a la pagina de pago');
-// }
+function finalizarCompra(){
+    alert('Gracias por confiar en Mucha, en seguida sera redirigido a la pagina de pago');
+    vaciarCarrito();
+}
